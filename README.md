@@ -43,9 +43,12 @@ Ideally, graph viewers would be flexible enough to account for many different co
             // top level
             "not liking green eggs & ham",
             // nested
-            "programming": [
-                "javascript",
-            ]
+            {
+                "sub": "programming",
+                "skills": [
+                    "javascript",
+                ]
+            }
         ],
         "experiences": [
             {
@@ -66,15 +69,18 @@ Ideally, graph viewers would be flexible enough to account for many different co
             "to": [
                 "be in socks",
                 // sub-category
-                "home reno": [
-                    // simple
-                    "electrical",
-                    // detailed
-                    {
-                        "task": "plumbing", 
-                        "why": "fixed my sink twice" 
-                    }
-                ]
+                {
+                    "title": "home reno",
+                    "skills": [
+                        // simple
+                        "electrical",
+                        // detailed
+                        {
+                            "task": "plumbing", 
+                            "why": "fixed my sink twice" 
+                        }
+                    ]
+                }
             ],
             "link": "https://handyfoxinsocks.com/.well-known/trust-graph.json"
         }
